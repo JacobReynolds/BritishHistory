@@ -1,6 +1,6 @@
 /*
 space.jpg = http://www.strangehistory.net/blog/wp-content/uploads/2012/03/britain.jpg
-guards.jpg = https://dln2w0qpih88d.cloudfront.net/uploads/programme/image/1522/gibraltar-britain-in-the-sun-banner-2.jpg
+henge.jpg = http://www.deshow.net/d/file/travel/2009-06/britain-landscape-603-2.jpg
 castles.jpg = http://miriadna.com/desctopwalls/images/max/Edinburgh-(Great-Britain).jpg
 
 */
@@ -130,7 +130,8 @@ body {
 }
 
 #lanfrancDescription {
-    background: url(images/guards.jpg);
+    background: url(images/henge.jpg);
+    background-position: 0 -250px;
     background-repeat: no-repeat;
 }
 

@@ -154,7 +154,7 @@ body {
 #tweetWatcher {
     border: 5px solid #4099ff;
     background-repeat: no-repeat;
-    background-size: 220px 480px;
+    /*Default background for loading*/
     margin-left: auto;
     margin-right: auto;
     width: 480px;

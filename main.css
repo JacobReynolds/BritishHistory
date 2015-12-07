@@ -103,6 +103,7 @@ body {
     background: url(images/space.jpg);
     background-repeat: no-repeat;
     width: 80vw;
+    height: 450px;
     margin-left: auto;
     margin-right: auto;
     position: relative;

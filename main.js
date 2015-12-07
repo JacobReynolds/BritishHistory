@@ -9,6 +9,7 @@ https://color.adobe.com/create/color-wheel/?base=2&rule=Custom&selected=0&name=8
 //15,000 pounds was anglo wealth in 1000
 $(document).ready(function () {
     var tweets = ['lanfranc', 'william', 'money'];
+    var sections = ['intro', 'lanfrancDescription', 'money'];
     var tweetDuration = 5;
     var defaultHeight = 62;
 
@@ -22,6 +23,11 @@ $(document).ready(function () {
             $(this).css('height', $(this)[0].scrollHeight + 'px');
         } else {
             $(this).css('height', defaultHeight);
+        }
+        for (var i = 0; i < sections.length; i++) {
+            if ($(this).attr('id') != $('#' + sections[i]).attr('id')) {
+                $('#' + sections[i]).css('height', defaultHeight);
+            }
         }
     })
 

@@ -1,0 +1,161 @@
+/*
+space.jpg = http://www.strangehistory.net/blog/wp-content/uploads/2012/03/britain.jpg
+guards.jpg = https://dln2w0qpih88d.cloudfront.net/uploads/programme/image/1522/gibraltar-britain-in-the-sun-banner-2.jpg
+castles.jpg = http://miriadna.com/desctopwalls/images/max/Edinburgh-(Great-Britain).jpg
+
+*/
+
+html,
+body {
+    background-color: #A78C73 !important;
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: #83B5D7;
+    font-family: 'Amatic SC', cursive;
+    height: auto;
+    color: black;
+}
+
+#header h2 {
+    margin: 0px;
+}
+
+#nav {
+    color: #83B5D7;
+    text-align: center;
+    width: 80vw;
+    background: #83B5D7;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+#nav a {
+    color: black;
+    font-size: 16px;
+}
+
+#nav div {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 15vw;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    transition: all .5s ease;
+}
+
+#nav div:hover {
+    background: white;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+#lanfranc {
+    position: relative;
+    left: 40vw;
+}
+
+.info {
+    height: 62px;
+    overflow: hidden;
+    padding: 10px;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1s ease !important;
+    color: black;
+}
+
+.info h1 {
+    font-size: 48px;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+
+#header h1 {
+    /*This is weird, I shouldn't have to remove a margin here.  Maybe due to font-size*/
+    font-size: 80px;
+    margin: 0px;
+}
+
+#intro {
+    background: url(images/space.jpg);
+    background-repeat: no-repeat;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.backgroundShower {
+    height: 200px;
+}
+
+#intro h1 {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+
+#description {
+    background: #83B5D7;
+    width: 30%;
+    position: relative;
+    left: 60vw;
+    right: 5%;
+}
+
+#lanfrancDescription {
+    background: url(images/guards.jpg);
+    background-repeat: no-repeat;
+}
+
+#money {
+    background: url(images/castles.jpg );
+    background-position: 0px 20%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#money p {
+    color: white !important;
+}
+
+#tweetHeader {
+    text-align: center;
+}
+
+#tweetWatcher {
+    border: 5px solid #4099ff;
+    background-repeat: no-repeat;
+    background-size: 220px 480px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 220px;
+    transition: all 1s ease;
+}

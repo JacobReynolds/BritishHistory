@@ -42,6 +42,6 @@ $(document).ready(function () {
         }, tweetDuration * 1000);
     }
 
-    tweetSwitcher(-1);
+    tweetSwitcher(getRandomInt(-1, tweets.length - 1));
 
 })

@@ -161,3 +161,7 @@ body {
     height: 220px;
     transition: all 1s ease;
 }
+
+#test {
+    opacity: 0;
+}

@@ -1,33 +1,55 @@
 <html>
 
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link href="main.css" rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="main.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <title>Home</title>
 </head>
 
 <body>
+    <div id="nav">
+        <a href="index.html">
+            <div class="box1">Home</div>
+        </a>
+        <a href="social.html">
+            <div class="box2">Social Media</div>
+        </a>
+        <a href="about.html">
+            <div class="box3">About Us</div>
+        </a>
+        <a href="contact.html">
+            <div class="box4">Contact</div>
+        </a>
+        <span class="stretch"></span>
+    </div>
+    <div id="mobileNav" onclick="setMobileNav()">
+        <h1>Menu</h1>
+        <span class="content">
+        <a href="index.html">
+            <div class="box1">Home</div>
+        </a>
+        <a href="social.html">
+            <div class="box2">Social Media</div>
+        </a>
+        <a href="about.html">
+            <div class="box3">About Us</div>
+        </a>
+        <a href="contact.html">
+            <div class="box4">Contact</div>
+        </a>
+        </span>
+    </div>
     <div id="header">
         <h1>Britain, under new management!</h1>
         <h2>5 days since last war!</h4>
   </div>
-    <div id="nav">
-        <a href="index.html"><div class="box1">Home</div></a>
-        <a href="social.html"><div class="box2">Social Media</div></a>
-        <a href="about.html"><div class="box3">About Us</div></a>
-        <a href="contact.html"><div class="box4">Contact</div></a>
-        <span class="stretch"></span>
-    </div>
   <div class="info" id="intro">  
     <h1>Normans rule!</h1>
-      <h2>No really, Normans rule now!</h2>
+      <span class="content"><h2>No really, Normans rule now!</h2>
         <br>
 
         <p>We have boosted the economy and brought in a new and exciting religious structure.</p>
@@ -35,36 +57,32 @@
 
         <p>We have made a new Britain, with a stable monarchy to come for centuries.</p>
 
-        <!--Adds a little height so we can see the background-->
-        <div class="backgroundShower"></div>
+        </span>
     </div>
 
 
 
     <div class="info" id="lanfrancDescription">
         <h1>Lanfranc who?</h1>
-        <p>We have taken Italy's best litigator and monk, Lanfranc! Using his monastic constitutions we have done away with the stale Regularis Concordia.
+        <span class="content"><p>We have taken Italy's best litigator and monk, Lanfranc! Using his monastic constitutions we have done away with the stale Regularis Concordia.
             <br>
             <br> We now have a strict daily devotion schedule to please our Lord and Savior, but are constantly reviewing our beliefs to make sure they fit best.</p>
-
-        <!--Adds a little height so we can see the background-->
-        <div class="backgroundShower"></div>
+            
+        </span>
     </div>
 
     <div class="info" id="money">
         <h1>Did someone say money?</h1>
 
-        <p>When we took over, the Anglo-Saxons had next to no money in circulation. Due to our influential presence and the amount of people we brought to England we <b>tredecupled</b> Britain's wealth!</p>
+        <span class="content"><p>When we took over, the Anglo-Saxons had next to no money in circulation. Due to our influential presence and the amount of people we brought to England we <b>tredecupled</b> Britain's wealth!</p>
 
-        <!--Adds a little height so we can see the background-->
-        <div class="backgroundShower"></div>
+        </span>
     </div>
 
-    <div class="info" id="test">
-        <h1>Test</h1>
-        <p>This is test text</p>
-    </div>
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="main.js"></script>
 
 </html>

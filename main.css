@@ -7,47 +7,49 @@ castles.jpg = http://miriadna.com/desctopwalls/images/max/Edinburgh-(Great-Brita
 
 html,
 body {
-    background-color: #A78C73 !important;
+    background: url(images/henge.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    padding: 0;
+    margin: 0;
     padding: 0;
     margin: 0;
 }
-
 #header {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background: #83B5D7;
     font-family: 'Amatic SC', cursive;
     height: auto;
-    color: black;
+    color: white;
+    margin-bottom: 50px;
 }
-
 #header h2 {
     margin: 0px;
 }
-
 #nav {
     color: #83B5D7;
     text-align: center;
     width: 80vw;
-    background: #83B5D7;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
 }
-
 #nav a {
     color: black;
     font-size: 16px;
+    text-decoration: none;
 }
-
 #nav div {
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+    background: #83B5D7;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     width: 15vw;
     height: 50px;
     line-height: 50px;
@@ -58,99 +60,96 @@ body {
     *display: inline;
     transition: all .5s ease;
 }
-
 #nav div:hover {
     background: white;
 }
-
+#mobileNav {
+    display: none;
+    width: 20vw;
+    text-align: center;
+    position: relative;
+    background: #83B5D7;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    transition: all 1s ease;
+    padding: 5px;
+}
+#mobileNav .content {
+    display: none;
+}
+#mobileNav div {
+    transition: all .3s linear;
+}
+#mobileNav div:hover {
+    background: black;
+}
+#mobileNav a {
+    text-decoration: none;
+    color: white;
+}
+#mobileNav h1 {
+    margin: 0px;
+}
+@media screen and (max-width: 650px) {
+    #nav {
+        display: none;
+    }
+    #mobileNav {
+        display: block;
+    }
+}
 .stretch {
     width: 100%;
     display: inline-block;
     font-size: 0;
     line-height: 0
 }
-
-#lanfranc {
-    position: relative;
-    left: 40vw;
-}
-
 .info {
-    height: 62px;
+    background: rgba(157, 180, 241, .8);
     overflow: hidden;
-    padding: 10px;
+    padding: 5px;
+    position: relative;
+    height: auto;
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: all 1s ease !important;
     transition: all 1s ease !important;
-    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    color: darkslategray;
+    border: 1px darkslategray solid;
 }
-
+.info .content {
+    display: none;
+    height: auto;
+}
 .info h1 {
     font-size: 48px;
     margin: 0px;
     text-align: center;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Lora', sans-serif;
 }
-
+.info p {
+    margin-top: 5px;
+}
+.info:hover {
+    background: rgba(157, 180, 241, 1);
+}
 #header h1 {
     /*This is weird, I shouldn't have to remove a margin here.  Maybe due to font-size*/
     font-size: 80px;
     margin: 0px;
 }
-
-#intro {
-    background: url(images/space.jpg);
-    background-repeat: no-repeat;
-    width: 80vw;
-    height: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    color: black;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    overflow: hidden;
-}
-
-.backgroundShower {
-    height: 200px;
-}
-
-#intro h1 {
-    text-align: center;
-    font-family: 'Abel', sans-serif;
-}
-
-#description {
-    background: #83B5D7;
-    width: 30%;
-    position: relative;
-    left: 60vw;
-    right: 5%;
-}
-
-#lanfrancDescription {
-    background: url(images/henge.jpg);
-    background-position: 0 -250px;
-    background-repeat: no-repeat;
-}
-
-#money {
-    background: url(images/castles.jpg );
-    background-position: 0px 20%;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-#money p {
-    color: white !important;
-}
-
 #tweetHeader {
     text-align: center;
+    color: white;
 }
-
 #tweetWatcher {
     border: 5px solid #4099ff;
     background-repeat: no-repeat;
@@ -158,10 +157,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 480px;
-    height: 220px;
+    height: 200px;
     transition: all 1s ease;
-}
-
-#test {
-    opacity: 0;
 }

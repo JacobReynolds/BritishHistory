@@ -47,7 +47,7 @@ body {
     text-decoration: none;
 }
 #nav div {
-    background: #83B5D7;
+    background: rgba(111, 115, 126, .6);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     width: 15vw;
@@ -61,7 +61,7 @@ body {
     transition: all .5s ease;
 }
 #nav div:hover {
-    background: white;
+    background: rgba(111, 115, 126, 1);
 }
 #mobileNav {
     display: none;
@@ -159,4 +159,16 @@ body {
     width: 480px;
     height: 200px;
     transition: all 1s ease;
+}
+.aux {
+    position: relative;
+    background: rgba(98, 103, 116, .6);
+    width: 50vw;
+    color: white;
+    margin-left: auto;
+    padding: 5px;
+    margin-right: auto;
+}
+.aux h1 {
+    text-align: center;
 }

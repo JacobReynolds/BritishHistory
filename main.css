@@ -42,12 +42,11 @@ body {
     text-justify: distribute-all-lines;
 }
 #nav a {
-    color: black;
+    color: white;
     font-size: 16px;
     text-decoration: none;
 }
 #nav div {
-    background: rgba(111, 115, 126, .6);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     width: 15vw;
@@ -61,16 +60,13 @@ body {
     transition: all .5s ease;
 }
 #nav div:hover {
-    background: rgba(111, 115, 126, 1);
+    background: rgba(111, 115, 126, .6);
 }
 #mobileNav {
     display: none;
     width: 40vw;
     text-align: center;
     position: relative;
-    background: #83B5D7;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
     font-family: 'Montserrat', sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -82,16 +78,19 @@ body {
     display: none;
 }
 #mobileNav div {
+    color: white;
     transition: all .3s linear;
 }
 #mobileNav div:hover {
-    background: black;
+    color: white;
+    background: rgba(111, 115, 126, .6);
 }
 #mobileNav a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 #mobileNav h1 {
+    color: white;
     margin: 0px;
 }
 @media screen and (max-width: 650px) {
@@ -123,11 +122,12 @@ body {
     font-size: 16px;
     overflow: hidden;
     color: darkslategray;
-    border: 1px darkslategray solid;
+    border: 1px white solid;
 }
 .info .content {
     display: none;
     height: auto;
+    padding: 20px;
 }
 .info h1 {
     font-size: 48px;
@@ -135,14 +135,13 @@ body {
     text-align: center;
     font-family: 'Lora', sans-serif;
 }
-.info p {
+. .info p {
     margin-top: 5px;
 }
 .info:hover {
     background: rgba(157, 180, 241, 1);
 }
 #header h1 {
-    /*This is weird, I shouldn't have to remove a margin here.  Maybe due to font-size*/
     font-size: 80px;
     margin: 0px;
 }

@@ -86,10 +86,12 @@ $(document).ready(function () {
         }
     })
 
-    setTimeout(function () {
-        openSection($('.info')[0]);
-    })
+    if ($('.info').length > 0) {
+        setTimeout(function () {
+            openSection($('.info')[0]);
+        })
+    }
 
+    //This runs on every part of the site currently, need an identifier for only the social section
     tweetSwitcher(getRandomInt(-1, tweets.length - 1));
-
 })
